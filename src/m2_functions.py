@@ -21,6 +21,23 @@ import rosegraphics as rg
 
 
 def main():
+    turtles('green', 10)
+    turtles('red', 5)
+
+def turtles(c,t):
+    window = rg.TurtleWindow()
+    ram = rg.SimpleTurtle('turtle')
+    ram.pen = rg.Pen('green', t)
+    ram.forward(100)
+    kash = rg.SimpleTurtle('turtle')
+    kash.pen = rg.Pen(c, 5)
+    kash.backward(100)
+    window.close_on_mouse_click()
+
+
+
+
+    print(billy(3,4))
     """
     TESTS the functions that you will write below.
     You write the tests per the _TODO_s below.
@@ -28,7 +45,17 @@ def main():
 
 
 ###############################################################################
-# TODO: 3a.  Define a function immediately below this _TODO_.
+# Done: 3a.  Define a function immediately below this _TODO_.
+import math
+
+
+def billy(length1,length2):
+    hypotenuse = math.sqrt(length1**2 + length2**2)
+    return hypotenuse
+
+
+
+
 
 #   It takes two arguments that denote, for a right triangle,
 #   the lengths of the two sides adjacent to its right angle,
@@ -37,17 +64,18 @@ def main():
 #
 #   You may name the function and its parameters whatever you wish.
 #
-# TODO: 3b.  In main, CALL your function and print the returned value,
+# Done: 3b.  In main, CALL your function and print the returned value,
 #   to test whether you defined the function correctly.
 #
 ###############################################################################
 
 
 ###############################################################################
-# TODO: 4a.  Define a function immediately below this _TODO_.
+# Done: 4a.  Define a function immediately below this _TODO_.
 #   It takes two arguments:
 #     -- a string that represents a color (e.g. 'red')
 #     -- a positive integer that represents the thickness of a Pen.
+
 #
 #   The function should do the following (in the order listed):
 #     a. Constructs a TurtleWindow.
@@ -66,14 +94,14 @@ def main():
 #
 #   You may name the function and its parameters whatever you wish.
 #
-# TODO: 4b.  In main, CALL your function at least TWICE (with different values
+# Done: 4b.  In main, CALL your function at least TWICE (with different values
 #   for the arguments) to test whether you defined the function correctly.
 #
 ###############################################################################
 
 
 ###############################################################################
-# TODO: 5.
+# Done: 5.
 #   COMMIT-and-PUSH your work (after changing this TO-DO to DONE).
 #
 #   As a reminder, here is how you should do so:
